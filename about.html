@@ -1,0 +1,231 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <title>Web Development Touchstone</title> 
+    <meta charset="utf-8"> 
+    <style>
+        body {
+            color: #131c26;
+        }
+        h1 {
+            font-size: 30px;
+            font-family: "Arial"
+        }
+        h2 {
+            font-size: 25px;
+            font-family: 'Arial';
+            font-weight: bold;
+        }
+        p {
+            font-size: 16px;
+            font-family: 'Calibri';
+            font-weight: normal;
+        }
+        nav {
+            font-size: 20px;
+            font-family: 'Calibri';
+            font-weight: normal;
+        }
+        button {
+            font-size: 16px;
+            font-family: 'Calibri';
+            font-weight: normal;
+        }
+        form {
+            font-size: 15px;
+            font-family: 'Comfortaa';
+            font-weight: normal;
+        }
+    </style>
+</head> 
+
+
+<body> 
+<header> 
+    <a href="index.html"><img src="https://cdn2.sophia.org/markup_pictures/38789/file/d416ddc1e21da4a637596a8a6e29ae21.png" alt="my logo" class="logo" width="130" height="130"></a> 
+    <h1>Book Haven Bookstore</h1> 
+<nav> 
+    <div class="nav-links"> 
+        <a href="index.html">Home</a> 
+        <a href="gallery.html">Gallery</a> 
+        <a href="about.html">About Us</a> 
+        <a href="events.html">Events</a> 
+    </div> 
+    
+    <style> 
+        header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 15px 40px; 
+            background-color: #c7b65e;
+            } 
+            .nav-links { 
+            display: flex; 
+            gap: 50px; 
+            } 
+    </style> 
+            
+</nav>
+
+    <button id="cart-btn" onclick="viewCart()">
+        <img src="Icon Images/shopping-cart.png" alt="Shopping Cart" class="cart-icon">
+    </button>
+
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px; 
+        }
+
+        .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #131c26;
+        }
+
+        #cart-btn {
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .cart-icon {
+            width: 35px;
+            height: auto;
+        }
+    </style>
+</header> 
+
+<main> 
+    <hr>
+    <h2>Book Haven Mission</h2>
+    <p>Here at Book Haven, our mission is to inspire all and continue the thirst for knowledge! 
+       We want to connect our customers and readers with stories that not only educate them, but also entertain them. 
+       Building a welcoming community with a diverse selection of books and other literature is something we strive to uphold.
+       It should be a safe space to get away, a place to relax, a place to immerse yourself in a new world, a place to share ideas, discover new authors and topics, and a place where you can celebrate the joy of reading.
+       We are dedicated to making Book Haven an afforable, fun, and simple book-buying (or visiting) experience for every reader! &#x2661;</p>
+    
+    <br>
+    <br>
+    <br>
+    <div class="container">
+
+        <div class="left-panel">
+            <h2>Hours of Operation</h2>
+            <table>
+                <tr>
+                    <th>Monday-Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+                <tr>
+                    <td>9 a.m. - 8 p.m.</td>
+                    <td>10 a.m. - 6 p.m.</td>
+                    <td>11 a.m. - 5 p.m. </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <p>*Please note that certain holidays may change our open-close hours! :)*</p>
+        </div>
+
+        <div class="right-panel">
+            <h2>Feedback & Book Request Form</h2>
+            <form onsubmit="submitForm(event)">
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name ="lname"><br>
+                <br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <br>
+                <label for="message">Message/Request:</label><br>
+                <textarea id="message" name="message"></textarea>
+                <br>
+                <br>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+    </div>
+
+    <style>
+         main {
+            background-color: #FFF7EE;
+         }
+         button {
+            background-color: #ee583f;
+            cursor: pointer;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch; 
+            width: 100%;
+            height: 55vh;
+        }
+
+        .left-panel,
+        .right-panel {
+            flex: 1; 
+            padding: 20px;
+            border: 1px solid #131c26;
+            box-sizing: border-box; 
+            text-align: center;
+        }
+         table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    th, td {
+      border: 3px solid #2e4057;
+      padding: 15px;
+    }
+    form {
+        text-align: left;
+    }
+    </style>
+</main> 
+
+<footer> 
+        <form>
+        <p>Subscribe to Newsletter</p>
+            <label for="email"></label>
+            <textarea id="email">Your Email</textarea>
+        <button onclick="subscribe()">Subscribe</button>
+        </form>  
+    
+<nav>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About Us</a>
+            <a href="events.html">Events</a>
+        </div>
+</nav>
+    <style>
+        footer {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 15px 40px; 
+            background-color: #c7b65e;
+            } 
+            .footer-links { 
+            display: flex; 
+            gap: 10px; 
+            } 
+    </style>
+</nav>
+</footer> 
+<script src="script.js"></script>
+</body> 
+</html>

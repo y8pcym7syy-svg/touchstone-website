@@ -1,0 +1,284 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <title>Web Development Touchstone</title> 
+    <meta charset="utf-8"> 
+    <style>
+        body {
+            color: #131c26;
+        }
+        h1 {
+            font-size: 30px;
+            font-family: "Arial"
+        }
+        h2 {
+            font-size: 25px;
+            font-family: 'Arial';
+            font-weight: bold;
+        }
+        p {
+            font-size: 16px;
+            font-family: 'Calibri';
+            font-weight: normal;
+        }
+        nav {
+            font-size: 20px;
+            font-family: 'Calibri';
+            font-weight: normal;
+        }
+        button {
+            font-size: 16px;
+            font-family: 'Calibri';
+            font-weight: normal;
+        }
+    </style>
+</head> 
+
+
+
+<body> 
+<header> 
+    <a href="index.html"><img src="https://cdn2.sophia.org/markup_pictures/38789/file/d416ddc1e21da4a637596a8a6e29ae21.png" alt="my logo" class="logo" width="130" height="130"></a> 
+    <h1>Book Haven Bookstore</h1> 
+<nav> 
+    <div class="nav-links"> 
+        <a href="index.html">Home</a> 
+        <a href="gallery.html">Gallery</a> 
+        <a href="about.html">About Us</a> 
+        <a href="events.html">Events</a> 
+    </div> 
+    
+    <style> 
+        header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 15px 40px; 
+            background-color: #c7b65e;
+        } 
+            .nav-links { 
+            display: flex; 
+            gap: 50px; 
+        } 
+    </style> 
+            
+</nav>
+    <button id="cart-btn" onclick="viewCart()">
+        <img src="Icon Images/shopping-cart.png" alt="Shopping Cart" class="cart-icon">
+    </button>
+
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px; 
+        }
+
+        .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #131c26;
+        }
+
+        #cart-btn {
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .cart-icon {
+            width: 35px;
+            height: auto;
+        }
+    </style>
+</header> 
+
+<main> 
+    <div class="hero-image">    
+        <div class="hero-text">
+        <h1>Events & Community</h1>
+        </div>
+    </div>
+
+    <style>
+        body, html {
+            height: 30%;
+        }
+        .hero-image {
+            background-image: url("Other Images/events.jpg");
+            height: 50vh; 
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            border-style: double;
+            border-width: 8px;
+            border-color: #2e4057;
+            cursor: pointer;
+            
+        }
+        button {
+            background-color: #ee583f;
+            cursor: pointer;
+        }
+    </style>
+
+    <style>
+        main {
+            background-color: #FFF7EE;
+        }
+        button {
+            background-color: #ee583f;
+            cursor: pointer;
+        }
+    </style>
+    
+    <h2>Our Book/Library Events...</h2>
+    <style>
+        h2 {
+            text-align: center;
+        }
+    </style>
+
+    <ul>
+        <li>Every Monday, Wednesday, and Friday we have our afterschool homework/studying program (this is for students who don't have a much access to wifi or technology at home so they finish their homework).</li>
+        <li>On the 1st Thursday of evey month we have our book club where all is welcomed (We have our teens and adults version!) And of course all is welcome as long as they sign up first.</li>
+        <li>Once a month we always have a special event to give back and help our community <b>(We will be releasing information on the event for this month in a few days so stay tuned for that!)</b></li>
+        <li>Last but not least, keep an eye out for any new and exciting upcoming events for the community!</li>
+    </ul>
+
+    <div class="circle-wrapper">
+        <div class="circle-item">
+            <img src="Other Images/ice cream truck.jpg" alt="Ice cream truck" class="circle">
+            <p class="circle-desc">Ice Cream Truck Event</p>
+        </div>
+
+        <div class="circle-item">
+            <img src="Other Images/book drive.jpg" alt="Book Drive" class="circle">
+            <p class="circle-desc">Book Drive Fundraiser</p>
+        </div>  
+    </div>    
+
+    <style>
+        .circle-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 115px;
+            padding-right: 115px;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+        }
+
+        .circle-item {
+            text-align: center; 
+        }
+
+        .circle {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .circle-desc {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    </style>
+<hr>
+    <h2>Customer Testimonials &#x2661;</h2>
+
+    <div class="test-box-wrapper">
+        <div class="test-box">
+            <p>"I get so much of my homework done here which really helps when I don't want to do it at school or at home."
+            <br>
+            <br>
+            <b>-Luis Rivera</b>
+            </p>
+        </div>
+
+        <div class="test-box">
+            <p>"The atmosphere here is so welcoming and the colors/decoration makes it so cozy here. I'm kind of a big book nerd and I feel like I have a space here so be alone and do what I enjoy... reading!!"
+            <br>
+            <br>
+            <b>-Rory Huntzburger</b>
+            </p>
+        </div>
+
+        <div class="test-box">
+            <p>"Personally, I think all the events and the book club is a fun idea that not all regular libraries have. They have some but there is always soemthing to do here and there is always a space for you which I really enjoy."
+            <br>
+            <br>
+            <b>-Carina Garcia</b>
+            </p>
+        </div>
+    </div>
+
+    <style>
+        .test-box-wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px 115px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .test-box {
+            flex: 1;
+            background-color: #f7b3cc;     
+            border: 3px solid #2e4057;       
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); 
+            box-sizing: border-box;
+        }   
+        .test-box p {
+            font-size: 17px;
+            line-height: 1.4;
+            margin: 0;
+        }
+    </style>
+<hr>
+</main> 
+
+<footer> 
+        <form>
+        <p>Subscribe to Newsletter</p>
+            <label for="email"></label>
+            <textarea id="email">Your Email</textarea>
+        <button onclick="subscribe()">Subscribe</button>
+        </form>   
+    
+<nav>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About Us</a>
+            <a href="events.html">Events</a>
+        </div>
+</nav>
+    <style>
+        footer {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 15px 40px; 
+            background-color: #c7b65e;
+            } 
+            .footer-links { 
+            display: flex; 
+            gap: 10px; 
+            } 
+    </style>
+</nav>
+</footer> 
+<script src="script.js"></script>
+</body> 
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <title>Web Development Touchstone</title> 
+    <meta charset="utf-8"> 
+    <style>
+        body {
+            color: #131c26;
+        }
+        h1 {
+            font-size: 30px;
+            font-family: "Arial";
+            font-weight: bold;
+        }
+        h2 {
+            font-size: 25px;
+            font-family: 'Arial';
+            font-weight: bold;
+        }
+        p {
+            font-size: 16px;
+            font-family: 'Calibri';
+            font-weight: normal;
+        }
+        nav {
+            font-size: 20px;
+            font-family: 'Calibri';
+            font-weight: normal;
+        }
+        button {
+            font-size: 16px;
+            font-family: 'Calibri';
+            font-weight: normal;
+        }
+    </style>
+</head> 
+
+
+<body> 
+<header> 
+    <a href="index.html"><img src="https://cdn2.sophia.org/markup_pictures/38789/file/d416ddc1e21da4a637596a8a6e29ae21.png" alt="my logo" class="logo" width="130" height="130"></a> 
+    <h1>Book Haven Bookstore</h1> 
+<nav> 
+    <div class="nav-links"> 
+        <a href="index.html">Home</a> 
+        <a href="gallery.html">Gallery</a> 
+        <a href="about.html">About Us</a> 
+        <a href="events.html">Events</a> 
+    </div> 
+    
+    <style> 
+        header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 15px 40px; 
+            background-color: #c7b65e;
+        } 
+            .nav-links { 
+            display: flex; 
+            gap: 50px; 
+        } 
+    </style> 
+</nav>
+
+    <button id="cart-btn" onclick="viewCart()">
+        <img src="Icon Images/shopping-cart.png" alt="Shopping Cart" class="cart-icon">
+    </button>
+
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px; 
+        }
+
+        .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #131c26;
+        }
+
+        #cart-btn {
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .cart-icon {
+            width: 35px;
+            height: auto;
+        }
+    </style>
+    
+
+</header> 
+
+<main>
+    <style>
+        main {
+            background-color: #FFF7EE;
+        }
+    </style>
+
+    <div class="hero-image">    
+        <div class="hero-text">
+        <h1>New Releases</h1>
+        </div>
+    </div>
+
+    <style>
+        body, html {
+            height: 30%;
+        }
+        .hero-image {
+            background-image: url("Other Images/bookshelf.jpg");
+            height: 35vh; 
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            border-style: double;
+            border-width: 8px;
+            border-color: #2e4057;
+            cursor: pointer;
+            
+        }
+        button {
+            background-color: #ee583f;
+            cursor: pointer;
+        }
+    </style>
+
+    <section class="promo-section">
+        <div class="box staff-picks">
+            <h2>Staff Picks</h2>
+        </div>
+
+        <div class="box fall-promos">
+            <h2>Fall Promos</h2>
+        </div>
+    </section>
+
+    <style>
+        body {
+            margin: 0;
+        }
+        .promo-section {
+            display: flex;
+            justify-content: space-between;
+            margin: 50px 80px;
+            gap: 30px;
+        }
+        .box {
+            flex: 1;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            background-size: cover;
+            background-position: center;
+            border-style: double;
+            border-width: 8px;
+            border-color: #2e4057;
+            cursor: pointer;
+        }
+        .staff-picks {
+            background-image: url("Other Images/staff_picks.jpg");
+        }
+        .fall-promos {
+            background-image: url("Other Images/fall_promos.jpg");
+        }
+    </style>
+
+    <section class="category-grid">
+        <div class="grid-item fiction">
+            <h2>Fiction</h2>
+        </div>
+        <div class="grid-item magazines">
+            <h2>Magazines</h2>
+        </div>
+        <div class="grid-item non-fiction">
+            <h2>Non-Fiction</h2>
+        </div>
+        <div class="grid-item supplies">
+            <h2>Supplies</h2>
+        </div>
+  </section>
+
+  <style>
+    body {
+        margin: 0;
+    }
+    .category-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 195px);
+        width: 100%;
+        height: auto;
+        gap: 2;
+        border-style: double;
+        border-width: 5px;
+        border-color: #2e4057;
+    }
+    .grid-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        cursor: pointer;
+    }
+    .fiction {
+        background-image: url("Other Images/fiction.jpg");
+    }
+    .magazines {
+        background-image: url("Other Images/magazines.jpg")
+    }
+    .non-fiction {
+        background-image: url("Other Images/non-fiction.png");
+    }
+    .supplies {
+        background-image: url("Other Images/supplies.jpg");
+    }
+  </style>
+<pre>
+    <p> Free Shipping Over $50!                                                                                                                                                                                                                                                                                                                        Loyalty Points</p>
+</pre>
+
+<style>
+    pre {
+        background-color: #f7b3cc;
+        cursor: pointer;
+    }
+</style>
+</main>
+
+
+<footer> 
+        <form>
+        <p>Subscribe to Newsletter</p>
+            <label for="email"></label>
+            <textarea id="email">Your Email</textarea>
+        <button onclick="subscribe()">Subscribe</button>
+        </form>    
+        
+    
+<nav>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About Us</a> 
+            <a href="events.html">Events</a>
+        </div>
+</nav>
+    <style>
+        footer {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 15px 40px; 
+            background-color: #c7b65e;
+            } 
+            .footer-links { 
+            display: flex; 
+            gap: 10px; 
+            } 
+    </style>
+</nav>
+</footer> 
+<script src="script.js"></script>
+</body> 
+</html>
